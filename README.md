@@ -59,6 +59,10 @@ VM GUI > Confirm that CORE daemon runs - from a command line run 'sudo service c
 The pimdm.py service in CORE automatically adds router interfaces to its configuration file pimdm.conf.
 Right-clicking on a router icon and selecting the Services menu item brings up the set of available services including a Multicast section with both PIM-DM and SMCroute.
 
+![alt text](https://github.com/apwiggins/core752/blob/main/Multicast_Services.png?raw=true)
+
+![alt text](https://github.com/apwiggins/core752/blob/main/Multicast_in_CORE.png?raw=true)
+
  
 References:
 [1] https://github.com/coreemu/core
