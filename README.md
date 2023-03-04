@@ -48,8 +48,11 @@ Installation takes about 5-10 minutes.  You will be prompted at one point to ent
 
 ## Validate:
 HostMachine> Stop the VM: 'vagrant halt'
+
 HostMachine> Start the VM: 'vagrant up'
+
 VM GUI > Confirm that CORE runs - from a command line run 'core-gui'
+
 VM GUI > Confirm that CORE daemon runs - from a command line run 'sudo service core-daemon status'.  If not running, the 'sudo service core-daemon start'
 
 ## Multicast in CORE
@@ -59,6 +62,9 @@ Right-clicking on a router icon and selecting the Services menu item brings up t
  
 References:
 [1] https://github.com/coreemu/core
+
 [2] https://github.com/troglobit/pimd-dense
+
 [3] https://github.com/troglobit/smcroute
+
 [4] https://iperf.fr/
