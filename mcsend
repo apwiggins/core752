@@ -1,0 +1,4 @@
+#!/bin/bash
+# -T sets TTL, -b is payload size in kbytes, -t is duration in seconds
+# usage: ./mcsend [multicast IP address]
+iperf -u -c $1 -b 200k -t 100000 -T 5 -l 1370

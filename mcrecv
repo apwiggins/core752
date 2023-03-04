@@ -1,0 +1,3 @@
+#!/bin/bash
+# usage: ./mcrecv [multicast IP address]
+iperf -i 1 -u -s -B $1
