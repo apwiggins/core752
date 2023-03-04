@@ -64,7 +64,8 @@ Right-clicking on a router icon and selecting the Services menu item brings up t
 ![alt text](https://github.com/apwiggins/core752/blob/main/Multicast_in_CORE.png?raw=true)
 
  
-References:
+# References:
+
 [1] https://github.com/coreemu/core
 
 [2] https://github.com/troglobit/pimd-dense
