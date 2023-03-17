@@ -18,8 +18,9 @@ Receiver Example using multicast address 239.1.1.1:
 
 	DT2$ mcrecv 239.1.1.1
 
-### Public service reminder
-Everyone forgets at least once, but a multicast router requires 2 interfaces, so pimd-dense won't start if a router has only one interface.
+### Public service reminders
+- Everyone forgets at least once, but a multicast router requires 2 interfaces, so pimd-dense won't start if a router has only one interface.
+- Also, OSPFv2 takes 40 seconds to set up a route and multicast needs a unicast route in place to begin forwarding.  If multicast isn't working, just wait a bit or swap out OSPFv2 protocol to something faster like RIPv2.
 
 # Installation
 Vagrant is used to create the Virtualbox VM for CORE, install the custom multicast services in CORE and build CORE, ospf-mdr, pimd-dense, and smcroute from source.  The source tarballs will be downloaded during the installation.
