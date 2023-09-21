@@ -3,8 +3,8 @@
 
 # Vagrant configuration standard version 2
 Vagrant.configure("2") do |config|
-  #config.vm.box = "bento/ubuntu-20.04"
-  config.vm.box = "peru/ubuntu-20.04-desktop-amd64"
+  config.vm.box = "bento/ubuntu-20.04"
+  #config.vm.box = "peru/ubuntu-20.04-desktop-amd64"
 
   #current folder will be shared in the vagrant VM
   config.vm.synced_folder ".", "/home/vagrant/shared"
@@ -27,6 +27,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get install -y vim tmux flex bison build-essential libtk-img iperf
+    apt-get install -y ubuntu-desktop
     ln -s /usr/bin/python3 /usr/bin/python
     cd /home/vagrant/shared/pimd-dense-2.1.0
   	./autogen.sh
