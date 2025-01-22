@@ -89,7 +89,6 @@ class PIMDM(CoreService):
         cfg += "#phyint 128.223.163.129 disable\n"
         cfg += "#phyint 1.1.1.1 igmpgateway\n"
         cfg += "#phyint 10.0.0.2 disable\n"
-        cfg += "#phyint 10.91.1.1 enable Symmetrical ignore_wl_prunes gdc_validaddresses 239.5.250.0-239.5.250.10\n"
         cfg += "\n### interfaces found by PIMDD service\n"
         for iface in node.get_ifaces():
             cfg += f'phyint {iface.name} enable\n'
